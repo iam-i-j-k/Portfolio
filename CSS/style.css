@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(65, 36, 90);
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-size: 1.15rem;
+    color: rgb(140, 92, 185);
+}
+.Nav-left{
+    font-size: 1.7rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 140px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.purple{
+    color: rgb(140, 92, 185);
+}
+.text-grey{
+    color: gray;
+}
+.leftSection{
+    font-size: 2.5rem;
+    margin: 70px 0;
+}
+.btn{
+   
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Poppins;
+    color: white;
+   
+}
+.btn:hover{
+    box-shadow: 0px 0px 20px rgb(88, 52, 122);
+    cursor: pointer;
+}
+
+.rightSection img{
+   width: 100%;   
+   margin: 30px 0;
+}
+#element{
+    color: rgb(140, 92, 185);
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+main hr{
+    border: 0;
+    background: rgb(140, 92, 185);
+    height: 1.2px;
+    margin: 40px 30px;
+}
+.secondSection .box{
+   background: white;
+   width: 80vw;
+   height: 2px;
+   margin: 50px 0;
+   display: flex;
+}
+.secondSection .vertical{
+   height: 93px;
+   width: 1px;
+   margin: 0 5rem;
+   background-color: white;
+   
+}
+.vertical-title{
+    position: relative;
+    top: 60px;
+    width: 150px;
+    
+    font-size: 14px;
+}
+.vertical-desc{
+    position: relative;
+    top: 70px;
+    width: 150px;
+    font-size: 10px;
+}
+.box .image{
+    position: relative;
+    bottom: 35px;
+    right: 12px;
+    height: 30px;
+}
+footer{
+  
+    background-color: rgb(31, 13, 48);
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width: 223px;
+}
+.footer-rights{
+    text-align: center;
+    color: gray;
+}
+
+@media only screen and (max-width: 1080px){
+    nav{
+        height: 150px;
+        flex-direction: column;
+    }
+    nav ul{
+     
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{
+        margin: 0 10px;
+    }
+    .firstSection{
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    .firstSection > div{
+        width: 100%;
+        
+    }
+    .leftSection{
+        margin: 50px 0;
+        padding: 10px 0;
+        font-size: 2.2rem;
+    }
+    
+    .secondSection{
+        height: 150vh;
+    }
+    .secondSection  .box{
+        background: white;
+        width: 0px;
+        height: 150vh;
+        margin: 50px 0;
+        flex-direction: column;
+        
+    }
+    .secondSection .vertical{
+        margin: 40px;
+        flex-direction: row-reverse;
+        background-color: white;
+    }
+    .vertical-title{
+        position: relative;
+        top: -45px;
+        left: 55px;
+        font-size: 14px;
+    }
+    .vertical-desc{
+        position: relative;
+        top: -40px;
+        left: 20px;
+        width: 60vw;
+        height: 40vh;
+        font-size: 10px;
+    }
+    .box .image{
+        position: relative;
+        bottom: 0px;
+        right: 0px;
+        height: 30px;
+    }
+    .footer {
+       margin: 5px 20px;
+       padding: 10px 0;
+    }
+    .footer-fourth{
+       display: none;
+    }
+    .btn{
+       position: relative;
+       left: 30px;
+       background-color: transparent;
+       border: 1px solid white;
+       border-radius: 5px;
+       padding: 10px;
+       font-family: Poppins;
+       color: white;
+  
+    }
+    .btn:hover{
+       box-shadow: 0px 0px 20px rgb(88, 52, 122);
+       cursor: pointer;
+    }
+
+}
